@@ -57,9 +57,18 @@ class MainViewModel {
         isTimeToChime()
     }
     
+//    func isTimeToChime() {
+//        let date = Date()
+//        let minutes = Calendar.current.component(.minute, from: date)
+//        if minutes != previousMinute && minutes == 0 && isNotSleepyTime() {
+//            chime()
+//            previousMinute = minutes
+//        }
+//    }
+    
     func isTimeToChime() {
         let date = Date()
-        let minutes = Calendar.current.component(.minute, from: date)
+        let minutes = Calendar.current.component(.second, from: date)
         if minutes != previousMinute && minutes == 0 && isNotSleepyTime() {
             chime()
             previousMinute = minutes

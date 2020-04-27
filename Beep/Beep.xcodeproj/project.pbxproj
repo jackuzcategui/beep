@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,7 @@
 		3CD26FC124544006006A0C17 /* BeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD26FC024544006006A0C17 /* BeepTests.swift */; };
 		3CD26FCC24544006006A0C17 /* BeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD26FCB24544006006A0C17 /* BeepUITests.swift */; };
 		3CD26FDB245443BE006A0C17 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD26FDA245443BE006A0C17 /* UIColor+extensions.swift */; };
-		FE001D913AC3FFCF5380414B /* Pods_Beep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A68ABE2A3E24A4ED42DDFE /* Pods_Beep.framework */; };
+		C9229E75365058DE8DB68150 /* libPods-Beep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 516FA246D325DED9628077CC /* libPods-Beep.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +60,9 @@
 		3CD26FCB24544006006A0C17 /* BeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepUITests.swift; sourceTree = "<group>"; };
 		3CD26FCD24544006006A0C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD26FDA245443BE006A0C17 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		516FA246D325DED9628077CC /* libPods-Beep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3918EF87EDBC7E7D05E6DB /* Pods-Beep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beep.debug.xcconfig"; path = "Target Support Files/Pods-Beep/Pods-Beep.debug.xcconfig"; sourceTree = "<group>"; };
 		8698DD1EBB1ADDC1C91D190A /* Pods-Beep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beep.release.xcconfig"; path = "Target Support Files/Pods-Beep/Pods-Beep.release.xcconfig"; sourceTree = "<group>"; };
-		A0A68ABE2A3E24A4ED42DDFE /* Pods_Beep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4922BF24546AB10095A57A /* AVFoundation.framework in Frameworks */,
-				FE001D913AC3FFCF5380414B /* Pods_Beep.framework in Frameworks */,
+				C9229E75365058DE8DB68150 /* libPods-Beep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				3C4922BE24546AB10095A57A /* AVFoundation.framework */,
-				A0A68ABE2A3E24A4ED42DDFE /* Pods_Beep.framework */,
+				516FA246D325DED9628077CC /* libPods-Beep.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,7 +211,6 @@
 				3CD26FA224544004006A0C17 /* Sources */,
 				3CD26FA324544004006A0C17 /* Frameworks */,
 				3CD26FA424544004006A0C17 /* Resources */,
-				7C68C94B1FB86F09DBCF6BE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,23 +329,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7C68C94B1FB86F09DBCF6BE2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beep/Pods-Beep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beep/Pods-Beep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beep/Pods-Beep-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D8AEC39E9FEEEEA1BA1663E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
